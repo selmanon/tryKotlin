@@ -19,13 +19,13 @@ package pairless
 fun findPairless(a: IntArray): Int {
     var numberOfOccurance = 1
 
-    for(i in 0..a.size - 2) {
-        for(j in 1..a.size - 1) {
-            if( a[i] == a[j]) {
+    for (i in 0..a.size - 2) {
+        for (j in 1..a.size - 1) {
+            if (a[i] == a[j]) {
                 numberOfOccurance++
             }
         }
-        if(numberOfOccurance % 2 != 0) return a [i]
+        if (numberOfOccurance % 2 != 0) return a[i]
     }
 
     return 0
